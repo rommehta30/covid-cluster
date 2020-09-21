@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby and Rails setup
+https://medium.com/@dyanagi/how-to-install-ruby-on-rails-on-clean-install-mac-2a46dd1eee9
 
-Things you may want to cover:
+* Install the bundler
+> gem install bundler
 
-* Ruby version
+* Install the gems
+> bundle install
 
-* System dependencies
+* Database setup
+> rails db:create
+> rails db:migrate
 
-* Configuration
+* Run the application
+> rails s
+Above command runs the application at port 30000
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Routes
+Hexagon creation form: GET /hexagons/new
+View neighbours: GET /hexagons/{NAME OF HEXAGON}
+To make hexagon covid free: PATCH /hexagons/{NAME OF HEXAGON}/remove
