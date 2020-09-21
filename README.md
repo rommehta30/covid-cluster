@@ -15,7 +15,6 @@ https://medium.com/@dyanagi/how-to-install-ruby-on-rails-on-clean-install-mac-2a
 
 ## Run the application
 > rails s
-Above command runs the application at port 30000
 
 ## Routes
 ### Hexagon creation form 

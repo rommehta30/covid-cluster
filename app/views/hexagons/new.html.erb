@@ -6,7 +6,9 @@
 <%= form_for @hexagon, url: {action: "create"} do |f| %>
   <%= f.text_field :name, placeholder: "Enter Hexagon Name" %>
   <br>
-  <%= f.text_field :sides, values: @hexagon.neighbours, placeholder: "Enter comma separated neighbours. For Ex: 2#a$1,3#b$2 etc" %>
+  <%= f.text_field :sides, values: @hexagon.neighbours, placeholder: "Enter comma separated neighbours. For Ex: 2#b$1,3#a$2 etc" %>
+  <div>Here 2#b$1 means, new hexagon's side 2 will be attached to 'b' hexagon's side 1 </div>
+  <div>Sides can be from 1 to 6 </div>
   <br>
   <%= f.submit "Create" %>
 <% end %>

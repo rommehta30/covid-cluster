@@ -25,7 +25,7 @@ class Hexagon < ApplicationRecord
 
   def neighbours
     if sides.present?
-      sides.select { |k, v| v.present? }.map { |k, v| "#{k}#{v[0]}"}
+      sides.select { |k, v| v.present? }.map { |k, v| "#{k + 1}#{v[0]}"}
     end
   end
 
