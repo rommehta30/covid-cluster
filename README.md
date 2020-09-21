@@ -11,6 +11,7 @@ https://medium.com/@dyanagi/how-to-install-ruby-on-rails-on-clean-install-mac-2a
 
 ## Database setup
 > rails db:create
+
 > rails db:migrate
 
 ## Run the application
