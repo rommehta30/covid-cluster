@@ -1,0 +1,10 @@
+<div>
+  <% if @errors %>
+    <%= @errors %>
+  <% else %>  
+    Neighbours: <%= @hexagon.neighbours&.join(",") %>
+    <% if @hexagon.is_covid_cluster && @hexagon.can_become_covid_free? %>
+      <%= link_to  'Become Covid Free', remove_hexagon_path(@hexagon.name), method: :patch %>
+    <% end %>
+  <% end %>
+</div>
